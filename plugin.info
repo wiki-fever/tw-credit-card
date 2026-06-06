@@ -1,0 +1,9 @@
+{
+    "title": "$:/plugins/wiki-fever/credit-card",
+    "description": "A plugin for managing credit card information",
+    "author": "wiki-fever",
+    "version": "0.0.1",
+    "core-version": ">=5.0.8",
+    "source": "https://github.com/wiki-fever/tw-credit-card",
+    "plugin-type": "plugin"
+}

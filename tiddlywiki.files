@@ -1,0 +1,35 @@
+{
+    "tiddlers": [
+        {
+            "file": "files/credit-card-render.js",
+            "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/wiki-fever/credit-card/credit-card-render.js",
+                "module-type": "widget"
+            },
+            "prefix": "",
+            "suffix": ""
+        },
+        {
+            "file": "files/edit-bar-button.wiki",
+            "generate": "empty",
+            "fields": {
+                "title": "$:/temp/insert-credit-card",
+                "tags": "$:/tags/EditorToolbar",
+                "icon": "$:/core/images/print-button",
+                "caption": "Insert card",
+                "description": "insert credit card",
+                "condition": "[<targetTiddler>!has[type]] [<targetTiddler>get[type]prefix[text/vnd.tiddlywiki]]",
+                "shortcuts": "((temp-insert2))",
+                "condition-disabled": "[[$:/temp/bold/disabled]get[state-disabled]else[no]]",
+                "dropdown": "$:/wiki-fever/credit-card/dropdown"
+            }
+        },
+        {
+            "file": "files/dropdown.wiki",
+            "fields": {
+                "title": "$:/wiki-fever/credit-card/dropdown"                
+            }
+        }
+    ]
+}
