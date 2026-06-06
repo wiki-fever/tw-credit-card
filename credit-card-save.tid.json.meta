@@ -1,9 +1,0 @@
-author: wiki-fever
-core-version: >=5.0.8
-dependents: 
-description: A plugin for managing credit card information
-plugin-type: plugin
-source: https://github.com/wiki-fever/tw-credit-card
-title: $:/plugins/wiki-fever/credit-card
-type: application/json
-version: 0.0.1
