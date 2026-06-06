@@ -1,6 +1,15 @@
 \whitespace trim
 
 \define body(will-delete-title)
+    \define onPress()
+        <$action-sendmessage
+            $message="tm-edit-text-operation"
+            $param="insert-text"
+            text=<<credit-card-insert """$will-delete-title$""">>
+        />
+        <$action-deletetiddler $tiddler=<<will-delete-title>>/>
+    \end onPress
+
     <div style="padding:0 15px"> 
         ''insert card''<br/>
 
@@ -10,20 +19,11 @@
         <br/>
         <$edit-text placeholder="CVC" tag="input" tiddler="""$will-delete-title$""" field="cvc" default="" focus="true"/>
         <br/>
-        <$button style="width: auto; display: inline-block;">
-            <$let card={{$will-delete-title$!!card}} date={{$will-delete-title$!!date}} cvc={{$will-delete-title$!!cvc}}>
-                <$action-sendmessage
-                    $message="tm-edit-text-operation"
-                    $param="insert-text"
-                    text={{{ [<card>addprefix[<$credit-card-render card="]addsuffix[" date="]addsuffix<date>addsuffix[" cvc="]addsuffix<cvc>addsuffix["/>]] }}}
-                />
-            </$let>
-            <$action-deletetiddler $tiddler=<<will-delete-title>>/>
+        <$button style="width: auto; display: inline-block; background-colour: inherit;" actions=<<onPress>>>
             Insert
         </$button>
     </div>
 \end body
 
 <$transclude $variable="body" will-delete-title=<<dropdown-state>> />
-
 

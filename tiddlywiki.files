@@ -11,6 +11,16 @@
             "suffix": ""
         },
         {
+            "file": "files/credit-card-insert.js",
+            "fields": {
+                "type": "application/javascript",
+                "title": "$:/plugins/wiki-fever/credit-card/credit-card-insert.js",
+                "module-type": "macro"
+            },
+            "prefix": "",
+            "suffix": ""
+        },
+        {
             "file": "files/edit-bar-button.wiki",
             "generate": "empty",
             "fields": {
