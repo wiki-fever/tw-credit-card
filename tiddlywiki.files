@@ -14,7 +14,7 @@
             "file": "files/edit-bar-button.wiki",
             "generate": "empty",
             "fields": {
-                "title": "$:/temp/insert-credit-card",
+                "title": "$:/plugins/wiki-fever/credit-card/edit-bar-button",
                 "tags": "$:/tags/EditorToolbar",
                 "icon": "$:/core/images/print-button",
                 "caption": "Insert card",
@@ -22,13 +22,13 @@
                 "condition": "[<targetTiddler>!has[type]] [<targetTiddler>get[type]prefix[text/vnd.tiddlywiki]]",
                 "shortcuts": "((temp-insert2))",
                 "condition-disabled": "[[$:/temp/bold/disabled]get[state-disabled]else[no]]",
-                "dropdown": "$:/wiki-fever/credit-card/dropdown"
+                "dropdown": "$:/plugins/wiki-fever/credit-card/dropdown"
             }
         },
         {
             "file": "files/dropdown.wiki",
             "fields": {
-                "title": "$:/wiki-fever/credit-card/dropdown"                
+                "title": "$:/plugins/wiki-fever/credit-card/dropdown"                
             }
         }
     ]
